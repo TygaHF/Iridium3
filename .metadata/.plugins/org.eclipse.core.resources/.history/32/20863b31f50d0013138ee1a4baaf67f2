@@ -1,0 +1,5 @@
+package al.fbi.tyga.iridium.modules.render;
+
+public class Brightness {
+
+}

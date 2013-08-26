@@ -1,0 +1,31 @@
+package al.fbi.tyga.iridium.modules.render;
+
+import net.minecraft.src.Potion;
+import net.minecraft.src.PotionEffect;
+
+import com.gmail.mstojcevich.iridium.Iridium;
+import com.gmail.mstojcevich.iridium.events.render.*;
+import com.gmail.mstojcevich.iridium.mods.IridiumModule;
+import com.gmail.mstojcevich.iridium.mods.ModCategory;
+import com.gmail.mstojcevich.lib.event.EventListener;
+import com.gmail.mstojcevich.lib.event.HandleEvent;
+import com.gmail.mstojcevich.mclib.MinecraftWrapper;
+
+public class Brightness extends IridiumModule implements EventListener {
+
+	public Brightness() {
+		super("Brightness", ModCategory.DISPLAY);
+		Iridium.instance.eventHandler.registerListener(this);
+		this.setKeybind(48);
+	}
+	
+	@HandleEvent
+	public void onRenderWorld(EventRenderWorld event) {
+		if(!this.getToggled())
+			return;
+		
+		MinecraftWrapper.getPlayer().addPotionEffect(new PotionEffect(Potion.nightVision.getId(), 1, 1));
+	}
+	
+	
+}

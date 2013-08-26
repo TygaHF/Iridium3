@@ -1,0 +1,33 @@
+package al.fbi.tyga.iridium.modules.player;
+
+import com.gmail.mstojcevich.iridium.Iridium;
+import com.gmail.mstojcevich.iridium.events.player.EventPlayerMotionUpdate;
+import com.gmail.mstojcevich.iridium.mods.IridiumModule;
+import com.gmail.mstojcevich.iridium.mods.ModCategory;
+import com.gmail.mstojcevich.lib.event.EventListener;
+import com.gmail.mstojcevich.lib.event.HandleEvent;
+import com.gmail.mstojcevich.mclib.MinecraftWrapper;
+
+public class Sprint extends IridiumModule implements EventListener {
+
+	public Sprint() {
+		super(ModCategory.PLAYER);
+		Iridium.instance.eventHandler.registerListener(this);
+		// this.setKeybind(Keyboard.KEY_C);
+		this.setTitle("Sprint");
+	}
+
+	@HandleEvent
+	public void onMotionUpdate(EventPlayerMotionUpdate event) {
+		if (isSprintingViable()) {
+			event.getPlayer().setSprinting(true);
+		}
+	}
+
+	private boolean isSprintingViable() {
+		return MinecraftWrapper.getPlayer().moveForward > 0.0f
+				&& !MinecraftWrapper.getPlayer().isOnLadder()
+				&& !MinecraftWrapper.getPlayer().isSneaking()
+				&& !MinecraftWrapper;
+	}
+}

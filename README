@@ -1,0 +1,6 @@
+Iridium is a modded client for the popular game Minecraft aimed at automating tasks and also assisting the player.
+
+All mappings used for the Minecraft classes and fields are from the Minecraft Coder Pack - http://mcp.ocean-labs.de/
+Everything in this client is tested on a server running the server mod Spigot - http://www.spigotmc.org/
+
+Thank you Stl_Missouri and Github for providing git hosting for Iridium.

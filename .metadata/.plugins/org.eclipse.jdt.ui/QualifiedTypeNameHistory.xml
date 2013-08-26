@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.gmail.mstojcevich.iridium.events.player.EventPlayerMotionUpdate"/>
+<fullyQualifiedTypeName name="com.gmail.mstojcevich.iridium.mods.IridiumModule"/>
+<fullyQualifiedTypeName name="com.gmail.mstojcevich.lib.event.EventListener"/>
+<fullyQualifiedTypeName name="com.gmail.mstojcevich.iridium.mods.ModCategory"/>
+<fullyQualifiedTypeName name="com.gmail.mstojcevich.iridium.Iridium"/>
+<fullyQualifiedTypeName name="com.gmail.mstojcevich.lib.event.HandleEvent"/>
+<fullyQualifiedTypeName name="com.gmail.mstojcevich.iridium.events.render.EventRenderWorld"/>
+<fullyQualifiedTypeName name="com.gmail.mstojcevich.mclib.MinecraftWrapper"/>
+<fullyQualifiedTypeName name="net.minecraft.src.Potion"/>
+<fullyQualifiedTypeName name="net.minecraft.src.PotionEffect"/>
+</qualifiedTypeNameHistroy>

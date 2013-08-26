@@ -1,0 +1,15 @@
+package al.fbi.tyga.iridium.modules.player;
+
+import com.gmail.mstojcevich.iridium.Iridium;
+import com.gmail.mstojcevich.iridium.mods.IridiumModule;
+import com.gmail.mstojcevich.iridium.mods.ModCategory;
+import com.gmail.mstojcevich.lib.event.EventListener;
+
+public class Sprint extends IridiumModule implements EventListener {
+	
+	public Sprint() {
+		super(ModCategory.PLAYER);
+		Iridium.instance.eventHandler.registerListener(this);
+	}
+	
+}
